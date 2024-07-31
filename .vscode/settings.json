@@ -171,5 +171,8 @@
   "todo-tree.tree.showBadges": true,
   "todo-tree.tree.showCountsInTree": true,
   "typescript.tsdk": "node_modules\\typescript\\lib",
-  "java.configuration.updateBuildConfiguration": "interactive"
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "cSpell.words": [
+    "homescreen"
+  ],
 }
