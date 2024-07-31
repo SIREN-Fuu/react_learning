@@ -1,0 +1,174 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "never",
+      "source.organizeImports": "never"
+    },
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "never",
+      "source.organizeImports": "never"
+    },
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "commentTranslate.hover.enabled": true,
+  "cSpell.autoFormatConfigFile": true,
+  "cSpell.ignorePaths": [
+    "node_modules",
+    "**/node_modules",
+    "**/node_modules/**",
+    "node_modules/**",
+    "vscode-extension",
+    ".git",
+    "**/pub.dev/**",
+    "**/flutter/**",
+    "**/*.json",
+    "**/*.g.dart"
+  ],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": "active",
+  "firefox.keepProfileChanges": true,
+  "firefox.profileDir": "${workspaceFolder}\\browser_profiles\\firefox",
+  "prettier.singleQuote": true,
+  "search.exclude": {
+    "**/.DS_Store": true,
+    "**/.fvm": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/*.freezed.dart": true,
+    "**/*.g.dart": true,
+    "**/bower_components": true,
+    "**/CVS": true,
+    "**/doc": true,
+    "**/node_modules": true
+  },
+  "statusbar_command.commands": [
+    {
+      "command": "saveAll",
+      "id": "all_save",
+      "name": "all_save",
+      "priority": -1,
+      "text": "$(save-all)",
+      "tooltip": "全て保存"
+    },
+    {
+      "alignment": "left",
+      "command": "workbench.action.debug.start",
+      "id": "debug",
+      "name": "Debug",
+      "priority": -1,
+      "text": "$(debug-alt)",
+      "tooltip": "Debug"
+    }
+  ],
+  "todo-tree.filtering.excludeGlobs": [
+    "**/node_modules",
+    "**/{JsLib,typings,scripts}/**"
+  ],
+  "todo-tree.general.tagGroups": {
+    "BUG": [
+      "BUG"
+    ],
+    "FIXME": [
+      "FIXME"
+    ],
+    "HACK": [
+      "HACK"
+    ],
+    "MEMO": [
+      "MEMO"
+    ],
+    "NOTE": [
+      "NOTE"
+    ],
+    "TODO": [
+      "TODO"
+    ],
+    "UNDONE": [
+      "UNDONE"
+    ],
+    "WARNING": [
+      "WARNING"
+    ]
+  },
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "HACK",
+    "UNDONE",
+    "BUG",
+    "XXX",
+    "WARNING",
+    "REVIEW",
+    "OPTIMIZE",
+    "CHANGED",
+    "MEMO",
+    "NOTE",
+    "TEST",
+    "Nakajima",
+    "*"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "BUG": {
+      "foreground": "#ff00ff"
+    },
+    "FIXME": {
+      "foreground": "#ff0000"
+    },
+    "HACK": {
+      "foreground": "#fffb00"
+    },
+    "NOTE": {
+      "foreground": "#ffffff"
+    },
+    "TODO": {
+      "foreground": "#FF8C00"
+    },
+    "UNDONE": {
+      "foreground": "#00eeff"
+    },
+    "WARNING": {
+      "foreground": "#FF0000",
+      "icon": "alert"
+    }
+  },
+  "todo-tree.highlights.defaultHighlight": {
+    "background": "#5a3e3e",
+    "foreground": "#00ff00",
+    "icon": "checklist",
+    "iconColour": "#2C7CFF",
+    "opacity": 50,
+    "type": "text"
+  },
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)(\\(|:|\\s)[^(*|@|\\n)].*(\\\\n\\\\s(//|/\\\\*|\\\\*\\\\*|\\\\*)\\s{1,}.*)*",
+  "todo-tree.ripgrep.ripgrepMaxBuffer": 400,
+  "todo-tree.tree.disableCompactFolders": true,
+  "todo-tree.tree.scanMode": "open files",
+  "todo-tree.tree.showBadges": true,
+  "todo-tree.tree.showCountsInTree": true,
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}

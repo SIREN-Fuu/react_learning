@@ -1,0 +1,125 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "tsc: start",
+      "type": "npm",
+      "script": "build-check",
+      "detail": "TypeScript Build",
+      "isBackground": true,
+      "problemMatcher": [
+        "$tsc"
+      ]
+    },
+    {
+      "label": "debug-start",
+      "dependsOn": [
+        "typescript: type-check",
+        "vite-dev-server: start"
+      ],
+      "dependsOrder": "sequence",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "typescript: type-check",
+      "type": "shell",
+      "command": "npx",
+      "args": [
+        "tsc",
+        "--noEmit",
+        "-p",
+        "${workspaceFolder}/tsconfig.json"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        // "revealProblems": "onProblem",
+        "revealProblems": "never",
+        "focus": true,
+        "showReuseMessage": true,
+        "clear": true,
+        "panel": "shared",
+        "close": false,
+        // "group": "build"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "vite-dev-server: start",
+      "type": "npm",
+      "script": "build-dev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        // "revealProblems": "onProblem",
+        "revealProblems": "never",
+        "focus": false,
+        "showReuseMessage": true,
+        "clear": true,
+        // "panel": "dedicated",
+        "panel": "shared",
+        "close": true,
+        // "group": "build"
+      },
+      "problemMatcher": [
+        {
+          "owner": "typescript",
+          "source": "Typescript",
+          "fileLocation": [
+            "absolute"
+          ],
+          "applyTo": "allDocuments",
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "> vite|.*Internal server error: Transform failed with.*",
+            "endsPattern": ".*➜  Local.*|.*at failureErrorWithLog.*"
+          },
+          "pattern": [
+            {
+              "regexp": "^ERROR\\(TypeScript\\)\\s+(.*)$",
+              "message": 1
+            },
+            {
+              "regexp": "^FILE\\s+(.*):(\\d+):(\\d+)$",
+              "file": 1,
+              "line": 2,
+              "column": 3
+            }
+          ]
+        }
+      ],
+      "isBackground": true
+    },
+    {
+      "label": "debug-end",
+      "dependsOn": [
+        "vite-dev-server: end"
+      ],
+      "dependsOrder": "parallel"
+    },
+    {
+      "label": "vite-dev-server: end",
+      "type": "shell",
+      "command": "echo ${input:vite-dev-server_start_terminate}"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "vite-dev-server_start_terminate",
+      "type": "command",
+      "command": "workbench.action.tasks.terminate",
+      "args": "vite-dev-server: start"
+    }
+  ]
+}

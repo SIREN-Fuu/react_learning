@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "ms-ceintl.vscode-language-pack-ja",
+    "pkief.material-icon-theme",
+    "esbenp.prettier-vscode",
+    "christian-kohler.path-intellisense",
+    "firefox-devtools.vscode-firefox-debug",
+    "visualstudioexptteam.vscodeintellicode",
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "orta.vscode-jest",
+    "ionic.ionic",
+    "davidanson.vscode-markdownlint",
+    "yzhang.markdown-all-in-one",
+    "prateekmahendrakar.prettyxml",
+    "richie5um2.vscode-sort-json",
+    "gruntfuggly.todo-tree",
+    "ms-edgedevtools.vscode-edge-devtools"
+  ]
+}
