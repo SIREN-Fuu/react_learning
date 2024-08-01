@@ -22,6 +22,9 @@
     },
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -47,6 +50,7 @@
     "homescreen",
     "tailwindcss"
   ],
+  "css.validate": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
@@ -58,10 +62,16 @@
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": "active",
+  // "eslint.validate": [
+  //   "html",
+  //   "javascriptreact",
+  //   "typescriptreact"
+  // ],
   "firefox.keepProfileChanges": true,
   "firefox.profileDir": "${workspaceFolder}\\browser_profiles\\firefox",
   "java.configuration.updateBuildConfiguration": "interactive",
   "prettier.singleQuote": true,
+  "scss.validate": false,
   "search.exclude": {
     "**/.DS_Store": true,
     "**/.fvm": true,
