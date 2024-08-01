@@ -62,11 +62,11 @@
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": "active",
-  // "eslint.validate": [
-  //   "html",
-  //   "javascriptreact",
-  //   "typescriptreact"
-  // ],
+  "eslint.validate": [
+    "html",
+    "javascriptreact",
+    "typescriptreact"
+  ],
   "firefox.keepProfileChanges": true,
   "firefox.profileDir": "${workspaceFolder}\\browser_profiles\\firefox",
   "java.configuration.updateBuildConfiguration": "interactive",
