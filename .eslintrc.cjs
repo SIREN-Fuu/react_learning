@@ -3,7 +3,7 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ['plugin:react/recommended', 'eslint:recommended'],
+  extends: ['plugin:react/recommended', 'eslint:recommended', 'prettier'],
   parserOptions: {
     ecmaVersion: 2020,
     // ecmaVersion: 13,
@@ -14,11 +14,5 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
   },
-  plugins: ['html'],
-  overrides: [
-    {
-      files: ['*.html'],
-      processor: 'html/html-processor',
-    },
-  ],
+  ignorePatterns: ['**/*.html'],
 };
