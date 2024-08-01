@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "type-check": "npx tsc --noEmit",
+    "type-check": "npx tsc --noEmit --watch",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test.e2e": "cypress run",
