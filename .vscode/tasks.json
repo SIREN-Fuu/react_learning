@@ -28,6 +28,7 @@
     {
       "label": "debug-start",
       "dependsOn": [
+        "eslint: lint-check",
         "typescript: type-check",
         "vite-dev-server: start"
       ],
@@ -58,6 +59,27 @@
         // "group": "build"
       },
       "problemMatcher": "$tsc"
+    },
+    {
+      "label": "eslint: lint-check",
+      "type": "shell",
+      "command": "npx eslint src/* --ext .js,.jsx,.ts,.tsx",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ],
+      // "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        // "revealProblems": "onProblem",
+        "revealProblems": "never",
+        "focus": true,
+        "showReuseMessage": true,
+        "clear": true,
+        "panel": "shared",
+        "close": false,
+        // "group": "build"
+      },
     },
     {
       "label": "vite-dev-server: start",
