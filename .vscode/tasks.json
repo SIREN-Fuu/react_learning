@@ -46,7 +46,6 @@
       "problemMatcher": [
         "$eslint-stylish"
       ],
-      ,
       "presentation": {
         "echo": true,
         "reveal": "always",
