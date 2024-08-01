@@ -25,6 +25,9 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "commentTranslate.hover.enabled": true,
   "cSpell.autoFormatConfigFile": true,
   "cSpell.ignorePaths": [
@@ -39,6 +42,11 @@
     "**/*.json",
     "**/*.g.dart"
   ],
+  "cSpell.words": [
+    "compat",
+    "homescreen",
+    "tailwindcss"
+  ],
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
@@ -52,6 +60,7 @@
   "editor.guides.bracketPairsHorizontal": "active",
   "firefox.keepProfileChanges": true,
   "firefox.profileDir": "${workspaceFolder}\\browser_profiles\\firefox",
+  "java.configuration.updateBuildConfiguration": "interactive",
   "prettier.singleQuote": true,
   "search.exclude": {
     "**/.DS_Store": true,
@@ -170,9 +179,5 @@
   "todo-tree.tree.scanMode": "open files",
   "todo-tree.tree.showBadges": true,
   "todo-tree.tree.showCountsInTree": true,
-  "typescript.tsdk": "node_modules\\typescript\\lib",
-  "java.configuration.updateBuildConfiguration": "interactive",
-  "cSpell.words": [
-    "homescreen"
-  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }

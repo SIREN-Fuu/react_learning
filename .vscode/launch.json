@@ -8,7 +8,7 @@
       "name": "Edge",
       "type": "msedge",
       "request": "launch",
-      "url": "http://localhost:15600",
+      "url": "http://localhost:5173",
       "webRoot": "${workspaceFolder}",
       "preLaunchTask": "debug-start",
       "postDebugTask": "debug-end"
@@ -17,7 +17,7 @@
       "name": "Chrome",
       "type": "chrome",
       "request": "launch",
-      "url": "http://localhost:15600",
+      "url": "http://localhost:5173",
       "webRoot": "${workspaceFolder}",
       "preLaunchTask": "debug-start",
       "postDebugTask": "debug-end"
@@ -26,10 +26,17 @@
       "name": "Firefox",
       "type": "firefox",
       "request": "launch",
-      "url": "http://localhost:15600",
+      "url": "http://localhost:5173",
       "webRoot": "${workspaceFolder}",
       "preLaunchTask": "debug-start",
       "postDebugTask": "debug-end"
-    }
+    },
+    {
+      "name": "Edge-Single",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}",
+    },
   ]
 }
