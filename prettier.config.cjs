@@ -33,9 +33,6 @@ module.exports = {
   // オブジェクトリテラルの中括弧内のスペース
   bracketSpacing: true,
 
-  // JSXタグの最後の括弧を同じ行に配置する
-  jsxBracketSameLine: false,
-
   // アロー関数のパラメータに1つの引数がある場合でも括弧を常に付ける
   arrowParens: 'always',
 

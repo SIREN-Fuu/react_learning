@@ -30,6 +30,7 @@
       "dependsOn": [
         "eslint: lint-check",
         "typescript: type-check",
+        "npm: code-fix",
         "vite-dev-server: start"
       ],
       "dependsOrder": "sequence",
@@ -37,6 +38,25 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "eslint: lint-check",
+      "type": "shell",
+      "command": "npx eslint src/* --ext .js,.jsx,.ts,.tsx",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ],
+      ,
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "revealProblems": "never",
+        "focus": true,
+        "showReuseMessage": true,
+        "clear": true,
+        "panel": "shared",
+        "close": false,
+      },
     },
     {
       "label": "typescript: type-check",
@@ -49,36 +69,32 @@
       "presentation": {
         "echo": true,
         "reveal": "always",
-        // "revealProblems": "onProblem",
         "revealProblems": "never",
         "focus": true,
         "showReuseMessage": true,
         "clear": true,
         "panel": "shared",
         "close": false,
-        // "group": "build"
       },
       "problemMatcher": "$tsc"
     },
     {
-      "label": "eslint: lint-check",
-      "type": "shell",
-      "command": "npx eslint src/* --ext .js,.jsx,.ts,.tsx",
-      "problemMatcher": [
-        "$eslint-stylish"
-      ],
-      // "group": "build",
+      "label": "npm: code-fix",
+      "type": "npm",
+      "script": "code-fix",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "presentation": {
         "echo": true,
         "reveal": "always",
-        // "revealProblems": "onProblem",
         "revealProblems": "never",
-        "focus": true,
+        "focus": false,
         "showReuseMessage": true,
         "clear": true,
         "panel": "shared",
-        "close": false,
-        // "group": "build"
+        "close": true,
       },
     },
     {
@@ -92,15 +108,12 @@
       "presentation": {
         "echo": true,
         "reveal": "always",
-        // "revealProblems": "onProblem",
         "revealProblems": "never",
         "focus": false,
         "showReuseMessage": true,
         "clear": true,
-        // "panel": "dedicated",
         "panel": "shared",
         "close": true,
-        // "group": "build"
       },
       "problemMatcher": [
         {
