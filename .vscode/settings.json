@@ -148,6 +148,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
     "source.organizeImports": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -156,6 +157,9 @@
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": "active",
+  "eslint.lintTask.enable": true,
+  "eslint.lintTask.options": "src/*",
+  "eslint.run": "onType",
   "eslint.validate": [
     "html",
     "javascriptreact",
@@ -286,5 +290,7 @@
   "todo-tree.tree.scanMode": "open files",
   "todo-tree.tree.showBadges": true,
   "todo-tree.tree.showCountsInTree": true,
-  "typescript.tsdk": "node_modules\\typescript\\lib"
+  "typescript.experimental.updateImportsOnPaste": true,
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true
 }
