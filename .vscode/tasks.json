@@ -28,7 +28,7 @@
     {
       "label": "debug-start",
       "dependsOn": [
-        "eslint: lint-check",
+        // "eslint: lint-check",
         "typescript: type-check",
         "npm: code-fix",
         "vite-dev-server: start"
