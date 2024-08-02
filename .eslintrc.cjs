@@ -7,12 +7,15 @@ module.exports = {
     jest: true,
   },
   extends: ['plugin:react/recommended', 'eslint:recommended', 'prettier'],
-  ignorePatterns: ['dist', '.eslintrc.cjs', '**/*.html'],
+  globals: { React: true },
+  ignorePatterns: ['dist', '.eslintrc.cjs', '**/*.html', 'cypress.config.ts'],
   parserOptions: {
     ecmaVersion: 2020,
   },
   parser: '@typescript-eslint/parser',
   rules: {
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
   },

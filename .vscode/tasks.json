@@ -14,18 +14,6 @@
       }
     },
     {
-      "label": "eslint",
-      "type": "npm",
-      "script": "lint-check",
-      "problemMatcher": [
-        "$eslint-stylish"
-      ],
-      "group": "build",
-      "runOptions": {
-        "runOn": "folderOpen"
-      }
-    },
-    {
       "label": "debug-start",
       "dependsOn": [
         // "eslint: lint-check",
@@ -56,6 +44,9 @@
         "panel": "shared",
         "close": false,
       },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
     },
     {
       "label": "typescript: type-check",
