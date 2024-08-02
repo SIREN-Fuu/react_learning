@@ -15,8 +15,8 @@
     },
     {
       "label": "eslint",
-      "type": "shell",
-      "command": "npx eslint src/* --ext .js,.jsx,.ts,.tsx",
+      "type": "npm",
+      "script": "lint-check",
       "problemMatcher": [
         "$eslint-stylish"
       ],
@@ -41,8 +41,8 @@
     },
     {
       "label": "eslint: lint-check",
-      "type": "shell",
-      "command": "npx eslint src/* --ext .js,.jsx,.ts,.tsx",
+      "type": "npm",
+      "script": "lint-check",
       "problemMatcher": [
         "$eslint-stylish"
       ],
