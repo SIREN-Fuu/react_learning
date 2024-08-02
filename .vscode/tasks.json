@@ -100,20 +100,6 @@
       "label": "vite-dev-server: start",
       "type": "npm",
       "script": "dev",
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "presentation": {
-        "echo": true,
-        "reveal": "always",
-        "revealProblems": "never",
-        "focus": false,
-        "showReuseMessage": true,
-        "clear": true,
-        "panel": "shared",
-        "close": true,
-      },
       "problemMatcher": [
         {
           "owner": "typescript",
@@ -141,7 +127,21 @@
           ]
         }
       ],
-      "isBackground": true
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "revealProblems": "never",
+        "focus": false,
+        "showReuseMessage": true,
+        "clear": true,
+        "panel": "shared",
+        "close": true,
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
     },
     {
       "label": "debug-end",
