@@ -9,9 +9,9 @@
       "problemMatcher": [
         "$tsc-watch",
       ],
-      "runOptions": {
-        "runOn": "folderOpen"
-      }
+      // "runOptions": {
+      //   "runOn": "folderOpen"
+      // }
     },
     {
       "label": "debug-start",
@@ -83,9 +83,9 @@
         "panel": "shared",
         "close": true,
       },
-      "runOptions": {
-        "runOn": "folderOpen"
-      }
+      // "runOptions": {
+      //   "runOn": "folderOpen"
+      // }
     },
     {
       "label": "vite-dev-server: start",
